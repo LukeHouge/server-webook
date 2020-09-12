@@ -23,7 +23,6 @@ http.createServer((req, res) => {
         });
 
         req.on('end', () => {
-                console.log(body);
                 let sig = "sha1=" + crypto.createHmac('sha1', creds.secret).update(body).digest('hex');
 
                 let jsonData = JSON.parse(body);
