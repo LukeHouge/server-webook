@@ -4,7 +4,7 @@ Created from this guide https://www.digitalocean.com/community/tutorials/how-to-
 let prodDirectory = "/var/www/badgerloop.com";
 let devDirectory = "/var/www/dev.badgerloop.com";
 let lukeDirectory = "/var/www/lukehouge.com";
-let aiDirectory = "var/www/ai";
+let aiDirectory = "/var/www/ai";
 let creds = require("./creds.json");
 let port = 3001;
 
