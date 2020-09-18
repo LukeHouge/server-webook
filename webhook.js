@@ -3,6 +3,7 @@ Created from this guide https://www.digitalocean.com/community/tutorials/how-to-
 */
 let http = require('http');
 let crypto = require('crypto');
+
 const exec = require('child_process').exec;
 
 const { prodDirectory, devDirectory, lukeDirectory, aiDirectory } = require('./config');
