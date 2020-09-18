@@ -1,8 +1,8 @@
 /*
 Created from this guide https://www.digitalocean.com/community/tutorials/how-to-use-node-js-and-github-webhooks-to-keep-remote-projects-in-sync 
 */
-let prodDirectory = "/var/www/badgerloop.com";
-let devDirectory = "/var/www/dev.badgerloop.com";
+let prodDirectory = "/var/www/badgerloop.org";
+let devDirectory = "/var/www/dev.badgerloop.org";
 let lukeDirectory = "/var/www/lukehouge.com";
 let aiDirectory = "/var/www/ai";
 let creds = require("./creds.json");
@@ -11,7 +11,7 @@ let port = 3001;
 let http = require('http');
 let crypto = require('crypto');
 let fs = require('fs');
-
+z
 const exec = require('child_process').exec;
 
 http.createServer((req, res) => {
