@@ -11,7 +11,6 @@ let port = 3001;
 let http = require('http');
 let crypto = require('crypto');
 let fs = require('fs');
-z
 const exec = require('child_process').exec;
 
 http.createServer((req, res) => {
