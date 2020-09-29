@@ -59,6 +59,14 @@ const app = (req, res) => {
                                 });
                         }
                 }
+                else if (repo === "BOM-Webapp") {
+                        console.log("[INFO] Recieved apps.badgerloop.org");
+                        if (req.headers['x-hub-signature'] === sig) {
+                                exec(`cd ${appsDirectory} && git pull && pm2 restart prodBOM`, (err, stdout, stderr) => {
+                                        if (err) console.log(`[ERROR] ${err}`)
+                                });
+                        }
+                }
 
         });
 
